@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 :root{
+    /* cores */
     --bg-principal: #081FF7;
     --defaul-font-color: #FFFFFF;
     --secundary-font-color: #000000;
     --bg-main: #F6F6F6;
     --bg-footer: #686AE5;
     --bg-window: #9293A1;
+
+
+    /* fontes */
+    --font: 'Poppins', sans-serif;
 }

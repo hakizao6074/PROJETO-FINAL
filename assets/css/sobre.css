@@ -1,0 +1,13 @@
+@import url('global.css');
+
+body{
+    background-color: var(--bg-principal);
+    color: var(--secundary-font-color);
+}
+
+body h1{
+    font-family: var(--font);
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--defaul-font-color);
+}
