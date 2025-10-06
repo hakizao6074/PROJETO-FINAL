@@ -1,9 +1,112 @@
 
 @import url('global.css');
 
+body {
+    font-family: var(--font);
+    padding: 0%;
+    margin: 0%;
+}
+
 
 header {
     background-color: var(--bg-principal);
     color: var(--defaul-font-color);
+    display: flex;
+    gap: 0px;
+    justify-content: space-around;
+    font-weight: 400;
+    padding: 0px;
+}
 
+.text-1 {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.nav-bar-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 10px;
+}
+
+.text-nav-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px;
+    width: 50%;
+}
+
+.BUTTON-1 {
+    border: none;
+    background-color: var(--bg-principal);
+    color: var(--defaul-font-color);
+    font-weight: 600;
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 40px;
+    padding: 1px;
+}
+
+.img-back {
+    background-image: url("/assets/img/dadinho/pexels-jakubzerdzicki-34170828\ -\ Copia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    opacity: black 100%;
+    background-color: black;
+}
+
+.text-main-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    gap: 5px;
+    padding: 5px;
+    color: var(--defaul-font-color);
+    flex-direction: column;
+    text-align: center;
+}
+
+.alinh-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.desiste {
+    background-color: #C7C7CF;
+    height: 220px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: absolute;
+
+}
+
+
+
+.img-1 {
+    width: 500px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.espaça {
+    width: 10%;
+}
+
+.div {
+    width: 5%;
 }
