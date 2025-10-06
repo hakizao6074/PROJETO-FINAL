@@ -1,0 +1,9 @@
+
+@import url('global.css');
+
+
+header {
+    background-color: var(--bg-principal);
+    color: var(--defaul-font-color);
+
+}
