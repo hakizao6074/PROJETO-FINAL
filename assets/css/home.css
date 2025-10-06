@@ -30,6 +30,7 @@ header {
     justify-content: space-around;
     padding: 15px;
     gap: 10px;
+    height: 50px;
 }
 
 .text-nav-1 {
@@ -55,12 +56,13 @@ header {
 }
 
 .img-back {
-    background-image: url("/assets/img/dadinho/pexels-jakubzerdzicki-34170828\ -\ Copia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-
     opacity: black 100%;
     background-color: black;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  /* "capa" escura */
+    url('/assets/img/dadinho/pexels-jakubzerdzicki-34170828\ -\ Copia.jpg');
 }
 
 .text-main-1 {
