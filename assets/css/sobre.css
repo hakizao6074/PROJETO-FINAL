@@ -7,9 +7,13 @@
     font-family: var(--font);
 }
 
+body{
+    overflow: hidden;
+}
+
 header{
     width: 100%;
-    height: 150px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -33,6 +37,21 @@ header .first{
         font-size: 14px;
         font-weight: 500;
     }
+
+
+
+    a{
+        text-decoration: none;
+        color: var(--bg-main);
+        font-size: 16px;
+        font-weight: 500;
+
+
+    &:hover{
+        color: var(--bg-footer);
+        cursor: pointer;
+    }
+}
 }
 
 header .second > *{
@@ -111,7 +130,7 @@ main{
     justify-content: center;
     align-items: center;
     background-image: url('../imgs/teteu/image.png');
-    height: 81.6vh;
+    height: 84vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,8 +148,8 @@ main .stuffs{
 
 
 main .stuffs .text{
-    height: auto;
-    width: 60%;
+    max-height: 500px;
+    max-width: 60%;
     background-color: var(--bg-stuffs);
     display: flex;
     justify-content: center;
@@ -174,6 +193,11 @@ main .stuffs .text{
 
 
 @media (max-width: 878px){
+    header .second > *{
+    flex: 0;
+}
+
+
     header .second img{
     width: 100px;
     height: 30px;
@@ -182,7 +206,8 @@ main .stuffs .text{
 
 header .second{
     width: 100%;
-    height: 100px;
+    height: 70px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: space-between; 
@@ -239,11 +264,47 @@ header .second button{
     }
 }    
 
+}
 
-main .bg{
-        background-image: none;
+
+@media (max-width: 1012px){
+    main .stuffs .text h1{
+        font-size: 20px;
+    } 
+}
+
+@media (max-width: 740px){
+    main .stuffs .text h1{
+        font-size: 15px;
+    } 
+}
+
+@media (max-width: 440px){
+    main .stuffs .text h1{
+        font-size: 10px;
+    } 
+    main .stuffs .text a button{
+        width: 100px;
+        height: 30px;
     }
-main{
-        background-image: url('../imgs/teteu/image.png');
+}
+
+@media (max-width: 658px){
+    header .second button{
+        display: none;
     }
+    header .first a{
+        display: block;
+    }
+    header .first .siga{
+        display:  none;
+    }
+    header .first h2{
+        font-size: x-small;
+    }
+    header .second img{
+    width: 130px;
+    height: 60px;
+    object-fit: cover;
+}    
 }
