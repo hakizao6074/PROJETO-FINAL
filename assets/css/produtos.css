@@ -7,9 +7,6 @@
     font-family: var(--font);
 }
 
-body{
-    overflow: hidden;
-}
 
 header{
     width: 100%;
@@ -26,349 +23,214 @@ header .first{
     background-color: var(--bg-principal);
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+
+    
+    h2,
+    a{
+        text-decoration: none;
+        color: var(--defaul-font-color);
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+
+
+    a{
+        text-decoration: none;
+        color: var(--bg-main);
+        font-size: 16px;
+        font-weight: 500;
+
+
+    &:hover{
+        color: var(--bg-footer);
+        cursor: pointer;
+    }
+}
+}
+
+header .second > *{
+    flex: 0 1 auto;
+}
+
+header .second img{
+    width: 200px;
+    height: 60px;
+    object-fit: cover;
+}
+
+header .second{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: var(--bg-main);
+    padding: 0 40px; 
+
+}
+
+header .second nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    a{
+        text-decoration: none;
+        color: var(--secundary-font-color);
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+    }
+
+    a:hover{
+        color: var(--bg-footer);
+    }
+
+    a:nth-child(1){
+        color: var(--bg-principal);
+        font-size: 18px;
+    }
+}
+
+
+header .second button{
+   border: none; 
+   background-color: var(--bg-principal);
+   color: var(--bg-main);
+    padding: 7px 20px;
+    border-radius: 40px;
+    width: 150px;
+
+
+    a{
+        text-decoration: none;
+        color: var(--bg-main);
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+    &:hover{
+        background-color: var(--bg-footer);
+        cursor: pointer;
+    }
+}
+
+
+
+
+
+
+
+main{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: red;
+    
+}
+
+main .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+main .cards .card a{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--bg-principal);
+    width: 250px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--secundary-font-color);
     justify-content: space-between;
-    gap: 20px;
-
-    
-    .siga h2{
-        text-decoration: none;
-        color: var(--defaul-font-color);
-        font-size: 14px;
-        font-weight: 500;
-    }
-
-
-
-    .login{
-        display: none;
-        text-decoration: none;
-        color: var(--bg-main);
-        font-size: 16px;
-        font-weight: 500;
-
+    align-items: center;
 
     &:hover{
-        color: var(--bg-footer);
-        cursor: pointer;
+        transform: scale(1 1 1);
+    }
+
+    &:active{
+        background-color: var(--bg-produtos);
     }
 }
-}
 
-header .second > *{
-    flex: 0 1 auto;
-}
-
-header .second img{
-    width: 200px;
-    height: 60px;
-    object-fit: cover;
-}
-
-header .second{
+main .cards .card a img{
+    border-radius: 8px;
+    max-height: 70%;
     width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    background-color: var(--bg-main);
-    padding: 0 40px; 
-
 }
 
-header .second nav{
-    list-style: none;
+main .cards .card a button{
+    border-radius: 10px;
+    border: none;
     display: flex;
-    align-items: center;
+    padding: 4px;
+    gap: 7px;
     justify-content: center;
-    gap: 30px;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+    flex-direction: row-reverse;
 
-    a{
-        text-decoration: none;
-        color: var(--secundary-font-color);
-        font-size: 16px;
-        font-weight: 500;
-        transition: all 0.3s ease-in-out;
-    }
-
-    a:hover{
-        color: var(--bg-footer);
-    }
-
-    a:nth-child(1){
-        color: var(--bg-principal);
-        font-size: 18px;
+    img{
+    height: 30px;
+    width: 30px;
+    background-position: center;
+    object-fit: cover;
     }
 }
 
-
-header .second button{
-   border: none; 
-   background-color: var(--bg-principal);
-   color: var(--bg-main);
-    padding: 7px 20px;
-    border-radius: 40px;
-    width: 150px;
-
-
-    a{
-        text-decoration: none;
-        color: var(--bg-main);
-        font-size: 16px;
-        font-weight: 500;
-    }
-
-
-    &:hover{
-        background-color: var(--bg-footer);
-        cursor: pointer;
-    }
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font);
-}
-
-body{
+main .cards .card a h2{
+    font-size: 16px;
     overflow: hidden;
 }
 
-header{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-header .first{
-    width: 100%;
-    height: 50px;
-    background-color: var(--bg-principal);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-
-    
-    h2,
-    a{
-        text-decoration: none;
-        color: var(--defaul-font-color);
-        font-size: 14px;
-        font-weight: 500;
-    }
 
 
 
-    a{
-        text-decoration: none;
-        color: var(--bg-main);
-        font-size: 16px;
-        font-weight: 500;
-
-
-    &:hover{
-        color: var(--bg-footer);
-        cursor: pointer;
-    }
-}
-}
-
-header .second > *{
-    flex: 0 1 auto;
-}
-
-header .second img{
-    width: 200px;
-    height: 60px;
-    object-fit: cover;
-}
-
-header .second{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    background-color: var(--bg-main);
-    padding: 0 40px; 
-
-}
-
-header .second nav{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-
-    a{
-        text-decoration: none;
-        color: var(--secundary-font-color);
-        font-size: 16px;
-        font-weight: 500;
-        transition: all 0.3s ease-in-out;
-    }
-
-    a:hover{
-        color: var(--bg-footer);
-    }
-
-    a:nth-child(1){
-        color: var(--bg-principal);
-        font-size: 18px;
-    }
-}
-
-
-header .second button{
-   border: none; 
-   background-color: var(--bg-principal);
-   color: var(--bg-main);
-    padding: 7px 20px;
-    border-radius: 40px;
-    width: 150px;
-
-
-    a{
-        text-decoration: none;
-        color: var(--bg-main);
-        font-size: 16px;
-        font-weight: 500;
-    }
-
-
-    &:hover{
-        background-color: var(--bg-footer);
-        cursor: pointer;
-    }
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font);
-}
-
-body{
-    overflow: hidden;
-}
-
-header{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-header .first{
-    width: 100%;
-    height: 50px;
-    background-color: var(--bg-principal);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-
-    
-    h2,
-    a{
-        text-decoration: none;
-        color: var(--defaul-font-color);
-        font-size: 14px;
-        font-weight: 500;
-    }
 
 
 
-    a{
-        text-decoration: none;
-        color: var(--bg-main);
-        font-size: 16px;
-        font-weight: 500;
 
 
-    &:hover{
-        color: var(--bg-footer);
-        cursor: pointer;
-    }
-}
-}
-
-header .second > *{
-    flex: 0 1 auto;
-}
-
-header .second img{
-    width: 200px;
-    height: 60px;
-    object-fit: cover;
-}
-
-header .second{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    background-color: var(--bg-main);
-    padding: 0 40px; 
-
-}
-
-header .second nav{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-
-    a{
-        text-decoration: none;
-        color: var(--secundary-font-color);
-        font-size: 16px;
-        font-weight: 500;
-        transition: all 0.3s ease-in-out;
-    }
-
-    a:hover{
-        color: var(--bg-footer);
-    }
-
-    a:nth-child(1){
-        color: var(--bg-principal);
-        font-size: 18px;
-    }
-}
 
 
-header .second button{
-   border: none; 
-   background-color: var(--bg-principal);
-   color: var(--bg-main);
-    padding: 7px 20px;
-    border-radius: 40px;
-    width: 150px;
 
 
-    a{
-        text-decoration: none;
-        color: var(--bg-main);
-        font-size: 16px;
-        font-weight: 500;
-    }
 
 
-    &:hover{
-        background-color: var(--bg-footer);
-        cursor: pointer;
-    }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -490,4 +352,7 @@ header .second button{
     object-fit: cover;
 }    
 }
+
+
+
 
