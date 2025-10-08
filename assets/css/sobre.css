@@ -130,7 +130,7 @@ main{
     justify-content: center;
     align-items: center;
     background-image: url('../imgs/teteu/image.png');
-    height: 84vh;
+    height: calc(100vh - 150px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -196,6 +196,12 @@ main .stuffs .text{
     header .second > *{
     flex: 0;
 }
+
+       main{
+        height: calc(100vh - 120px);
+    }
+
+
 
 
     header .second img{
@@ -307,4 +313,26 @@ header .second button{
     height: 60px;
     object-fit: cover;
 }    
+}
+
+@media (max-width: 494px){
+    header .first h2,
+    header .first a,
+    header .first .login{
+        display: none;
+    }
+    header .second .logo{
+        display: none;
+    } 
+    header .second{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    header .first{
+        background-image: url('../icons/3.png');
+        background-position: center;
+        background-size: 40%;
+        background-repeat: no-repeat;
+    }
 }

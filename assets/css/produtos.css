@@ -8,6 +8,7 @@
 }
 
 
+
 header{
     width: 100%;
     height: auto;
@@ -34,7 +35,6 @@ header .first{
         font-size: 14px;
         font-weight: 500;
     }
-
 
 
     a{
@@ -125,10 +125,10 @@ header .second button{
 
 
 
-
-
 main{
     padding: 10px;
+    height: calc(100vh - 150px);
+    background-color: red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,9 +158,10 @@ main .cards .card a{
     color: var(--secundary-font-color);
     justify-content: space-between;
     align-items: center;
+    transition:0.4s;
 
     &:hover{
-        transform: scale(1 1 1);
+        transform: scale(1.06);
     }
 
     &:active{
@@ -240,6 +241,9 @@ main .cards .card a h2{
     flex: 0;
 }
 
+    main{
+        height: calc(100vh - 120px);
+    }
 
     header .second img{
     width: 100px;
@@ -318,8 +322,14 @@ header .second button{
 
 @media (max-width: 740px){
     main .stuffs .text h1{
-        font-size: 15px;
+        font-size: 15px;    
     } 
+}
+
+@media (max-width: 809px){
+    main{
+        height: auto;
+    }
 }
 
 @media (max-width: 440px){
@@ -352,6 +362,26 @@ header .second button{
 }    
 }
 
-
+@media (max-width: 494px){
+    header .first h2,
+    header .first a,
+    header .first .login{
+        display: none;
+    }
+    header .second .logo{
+        display: none;
+    } 
+    header .second{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    header .first{
+        background-image: url('../icons/3.png');
+        background-position: center;
+        background-size: 40%;
+        background-repeat: no-repeat;
+    }
+}
 
 
