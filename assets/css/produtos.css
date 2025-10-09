@@ -36,6 +36,9 @@ header .first{
         font-weight: 500;
     }
 
+    .login{
+       display: none; 
+    }
 
     a{
         text-decoration: none;
@@ -384,3 +387,15 @@ header .second button{
 }
 
 
+
+
+@media (max-height: 779px){
+    header .first{
+        display: none;
+    }
+    main{
+        height: 100%;
+        margin-top: 20px;
+        padding: 10px;
+    }
+}

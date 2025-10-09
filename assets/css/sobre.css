@@ -38,7 +38,9 @@ header .first{
         font-weight: 500;
     }
 
-
+    .login{
+       display: none; 
+    }
 
     a{
         text-decoration: none;
@@ -299,7 +301,7 @@ header .second button{
     header .second button{
         display: none;
     }
-    header .first a{
+    header .first .login{
         display: block;
     }
     header .first .siga{
