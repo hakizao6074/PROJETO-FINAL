@@ -222,3 +222,8 @@ footer {
   text-align: center;
   gap: 10px;
 }
+
+.nav-bar-style {
+  text-decoration: none;
+  color: black;
+}
