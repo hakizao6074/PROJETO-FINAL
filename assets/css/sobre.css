@@ -131,7 +131,7 @@ main{
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    background-image: url('../imgs/teteu/image.png');
+    background-image: url('../img/teteu/image.png');
     height: calc(100vh - 150px);
     background-position: center;
     background-repeat: no-repeat;
