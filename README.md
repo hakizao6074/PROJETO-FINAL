@@ -2,7 +2,7 @@
 
 # PROJETO-FINAL
 
-## link GitHub ➡
+## link GitHub ➡ https://hakizao6074.github.io/PROJETO-FINAL/
 
 # ⬇⬇⬇ fluexo de trabalho ⬇⬇⬇
 
