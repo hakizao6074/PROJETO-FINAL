@@ -66,7 +66,7 @@ header {
     background-position: center;
     background-image: 
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url('/assets/img/dadinho/pexels-jakubzerdzicki-34170828 - Copia.jpg');
+      url('..//img/dadinho/pexels-jakubzerdzicki-34170828.jpg');
     color: var(--defaul-font-color);
 }
 
