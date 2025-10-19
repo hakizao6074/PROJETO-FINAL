@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+
+body {
+  height: 100vh;
+  background: url("bg.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  background-image: url('../img/lulcas/back.PNG');
+  background-size: cover;     
+  background-repeat: no-repeat; 
+  background-position: center; 
+}
+
+header{
+  width: 100%;
+  padding: 10px 20px;
+  background: #0044ff;
+  color: white;
+  font-size: 14px;
+}
+
+.uau {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.caxa {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(10px);
+  padding: 40px 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  color: white;
+  h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+
+  input {
+   width: 100%;
+   padding: 12px;
+   margin: 10px 0;
+   border-radius: 8px;
+   border: none;
+   outline: none;
+   font-size: 16px;
+   color: white;
+   background: rgba(255,255,255,0.35);
+  }
+}
+
+.logo {
+  position: relative;
+  bottom: 40px;
+  width: 200px;
+}
+
+
+
+.btn {
+  width: 70%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #0044ff;
+  color: white;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.link {
+  display: block;
+  margin-top: 12px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.link:hover {
+  opacity: 1;
+}
