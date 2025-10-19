@@ -47,6 +47,8 @@ header{
     font-size: 32px;
   }
 
+  
+
   input {
    width: 100%;
    padding: 12px;
@@ -55,14 +57,12 @@ header{
    border: none;
    outline: none;
    font-size: 16px;
-   color: white;
-   background: rgba(255,255,255,0.35);
+   color: black;
   }
 }
 
 .logo {
-  position: relative;
-  bottom: 40px;
+  
   width: 200px;
 }
 
