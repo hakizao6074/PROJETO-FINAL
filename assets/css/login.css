@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   background-image: url('../img/lulcas/back.PNG');
   background-size: cover;     
-  background-repeat: no-repeat; 
+  background-repeat: repeat; 
   background-position: center; 
 }
 
@@ -91,4 +91,28 @@ header{
 
 .link:hover {
   opacity: 1;
+}
+
+
+/* Media */
+@media (max-width: 600px) {
+    .caxa {
+        max-width: 90%; 
+        padding: 30px 20px; 
+    }
+
+    .logo {
+        width: 150px; 
+    }
+
+    .caxa h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 15px; 
+        font-size: 18px;
+    }
 }
