@@ -28,14 +28,15 @@ header {
   padding: 15px 40px;
 }
 
+
+.logo img{
+    width: 250px;
+}
+
 .logo {
   display: flex;
   align-items: center;
   gap: 8px;
-}
-
-.logo h2 {
-  color: #000;
 }
 
 .logo span {
@@ -91,23 +92,26 @@ main {
   font-size: 50px;
   margin-bottom: 15px;
 }
-
+h3{
+    opacity: 0.6;
+}
 .contact-info p {
   margin: 10px 0;
   line-height: 1.4;
+  opacity: 0.6;
 }
 
 .bottom-text {
   display: flex;
   gap: 60px;
-  margin-top: 60px;
+  margin-top: 250px;
 }
 
 /* Right Side (Form) */
 .contact-form {
   background: white;
   border-radius: 15px;
-  padding: 40px;
+  padding: 30px;
   width: 35%;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -117,10 +121,11 @@ main {
 }
 
 .name-fields,
+.email-fields,
 .phone-fields {
   display: flex;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 input,
@@ -157,10 +162,14 @@ button[type="submit"] {
   transition: 0.3s ease;
 }
 
+button[type="submit"]:hover {
+    opacity:0.8;
+}
 
 .rights {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 30px;
   font-size: 13px;
   color: gray;
 }
+
