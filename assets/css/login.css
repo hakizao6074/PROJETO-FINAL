@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   background-image: url('../img/lulcas/back.PNG');
   background-size: cover;     
-  background-repeat: no-repeat; 
+  background-repeat: repeat; 
   background-position: center; 
 }
 
