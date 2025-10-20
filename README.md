@@ -10,3 +10,4 @@
 </div>
 
 ## Por Favor usar css.global para variaveis de cores
+## Usem as branchs de voces e revisem as pull requests
