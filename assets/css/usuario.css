@@ -51,6 +51,7 @@ header{
 }
 
 .bgl{
+
    display: flex;
    justify-content: center;
    margin-top: 20px;
@@ -64,51 +65,28 @@ header{
         margin: 0 10px;
        }
    }
-}
-.udon{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  padding: 30px;
-}
 
-.card h2{
-  font-size: 20px;
-  margin-bottom: 15px;
-}
+}.pos.dark {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
 
-.preview{
-  width: 100%;
-  display: block;
-  border-radius: 8px;
-}
-
-.icons{
-  display: flex;
-  gap: 15px;
-  margin-top: 10px;
-  img{
-    height: 32px;
-    cursor: pointer;
-  }
-}
-
-.pos{
-    background-color: beige;
-}
-
-.post{
-    img{
-        height: 250px;
+    h1 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: white;
     }
 }
 
 
-@media (max-width:860px){
-  .udon{
-    grid-template-columns: 1fr;
-  }
+.post img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
 }
 
-
+.icons img {
+    height: 32px;
+    cursor: pointer;
+}
 
