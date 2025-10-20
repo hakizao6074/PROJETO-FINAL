@@ -7,7 +7,9 @@
     --bg-main: #F6F6F6;
     --bg-footer: #686AE5;
     --bg-window: #9293A1;
-    --bg-stuffs: rgba(0, 0, 0, 0.405);
+    --bg-stuffs: rgba(0, 0, 0, 0.5);
+    --bg-produtos: rgba(0,0,0,0.2);
+
 
     /* fontes */
     --font: 'Poppins', sans-serif;
