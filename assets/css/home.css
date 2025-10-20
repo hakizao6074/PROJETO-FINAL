@@ -13,15 +13,10 @@ header {
     display: flex;
     justify-content: space-around;
     font-weight: 400;
-    padding: 0;
-    gap: 0;
-    flex-wrap: wrap;
-}
-
-.text-1 {
-    display: flex;
-    justify-content: space-around;
+    padding: 10px;
     gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .nav-bar-1 {
@@ -30,9 +25,8 @@ header {
     justify-content: space-around;
     padding: 15px;
     gap: 10px;
-    height: 50px;
+    height: auto; /* Alterado para auto para responsividade */
     flex-wrap: wrap;
-    height: 70px;
 }
 
 .text-nav-1 {
@@ -57,6 +51,11 @@ header {
     border-radius: 40px;
     padding: 1px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.BUTTON-1:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* ================= BACKGROUND ================= */
@@ -68,6 +67,13 @@ header {
       linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
       url('..//img/dadinho/pexels-jakubzerdzicki-34170828.jpg');
     color: var(--defaul-font-color);
+    min-height: 100vh; /* Adicionado para garantir altura mínima */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 /* ================= SEÇÃO PRINCIPAL ================= */
@@ -80,27 +86,32 @@ header {
     color: var(--defaul-font-color);
     flex-direction: column;
     text-align: center;
+    margin-bottom: 50px; /* Espaço para o próximo elemento */
 }
+
 .text-main-1 h1 {
     font-weight: 500;
+    margin: 10px 0;
 }
 
 .alinh-1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     position: relative;
 }
 
 .desiste {
     background-color: #C7C7CF;
-    height: 220px;
+    height: auto; /* Alterado para auto */
     width: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
-    position: absolute;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .img-1 {
@@ -126,6 +137,7 @@ header {
     align-items: center;
     padding: 25px;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .block-1 {
@@ -136,6 +148,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .trofeu-img {
@@ -229,15 +242,41 @@ footer {
 .nav-bar-style {
     text-decoration: none;
     color: black;
+    transition: color 0.3s ease;
+}
+
+.nav-bar-style:hover {
+    color: var(--accent-color);
 }
 
 /* ================= RESPONSIVIDADE ================= */
+@media screen and (max-width: 1200px) {
+    .text-nav-1 {
+        width: 60%;
+    }
+
+    .img-1 {
+        width: 400px;
+        height: 80px;
+    }
+
+    .desiste {
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 900px) {
     header {
         flex-direction: column;
         text-align: center;
         font-size: 14px;
         gap: 10px;
+        padding: 15px;
+    }
+
+    .nav-bar-1 {
+        padding: 10px;
+        gap: 5px;
     }
 
     .text-nav-1 {
@@ -245,6 +284,7 @@ footer {
         justify-content: center;
         gap: 15px;
         font-size: 18px;
+        padding: 10px;
     }
 
     .img-1 {
@@ -255,6 +295,15 @@ footer {
     .BUTTON-1 {
         width: 130px;
         font-size: 16px;
+        height: 35px;
+    }
+
+    .text-main-1 {
+        font-size: 24px;
+    }
+
+    .text-main-1 h1 {
+        font-size: 28px;
     }
 
     .desiste {
@@ -266,11 +315,16 @@ footer {
     .cont-1 {
         flex-direction: column;
         gap: 20px;
+        padding: 10px;
     }
 
     .block-1 {
         height: 90px;
         width: 90px;
+    }
+
+    .trofeu-img {
+        height: 70px;
     }
 
     .img-2 {
@@ -282,21 +336,24 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 20px;
     }
 
     footer {
         flex-direction: column;
         font-size: 13px;
+        padding: 10px;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .text-main-1 {
         font-size: 20px;
+        padding: 10px;
     }
 
     .text-main-1 h1 {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .BUTTON-1 {
@@ -311,10 +368,74 @@ footer {
     }
 
     .trofeu-img {
-        height: 60px;
+        height: 50px;
     }
 
     .img-1 {
         width: 200px;
+    }
+
+    .img-2 {
+        width: 150px;
+    }
+
+    .about li {
+        font-size: 12px;
+    }
+
+    .about strong {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .text-nav-1 {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 16px;
+    }
+
+    .BUTTON-1 {
+        width: 100px;
+        font-size: 12px;
+        height: 30px;
+    }
+
+    .text-main-1 {
+        font-size: 18px;
+    }
+
+    .text-main-1 h1 {
+        font-size: 20px;
+    }
+
+    .desiste {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .cont-1 {
+        gap: 15px;
+    }
+
+    .block-1 {
+        height: 60px;
+        width: 60px;
+    }
+
+    .trofeu-img {
+        height: 40px;
+    }
+
+    .img-1 {
+        width: 150px;
+    }
+
+    .img-2 {
+        width: 120px;
+    }
+
+    header {
+        font-size: 12px;
     }
 }
