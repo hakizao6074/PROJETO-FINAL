@@ -29,6 +29,11 @@ header {
     flex-wrap: wrap;
 }
 
+
+.homecolor {
+    color: blue;
+    text-decoration: none;
+}
 .text-nav-1 {
     display: flex;
     justify-content: space-around;
