@@ -1,61 +1,166 @@
-.breadcrumb {
-  display: flex;
-  gap: 0.35rem;
-  align-items: center;
-  list-style: none;
+/* Basic Reset */
+* {
+  margin: 0;
   padding: 0;
-  margin: 0 0 1rem 0;
-  font-size: 0.95rem;
-  overflow: hidden; /* keep layout stable on small screens */
-  white-space: nowrap;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.breadcrumb li {
+body {
+  background-color: #c7caff;
+  color: #000;
+}
+
+/* Top Bar */
+.top-bar {
+  background: blue;
+  color: white;
+  text-align: left;
+  padding: 8px 40px;
+  font-size: 14px;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
   display: flex;
   align-items: center;
-  min-width: 0; /* allow children to shrink for text-overflow */
+  gap: 8px;
 }
 
-.breadcrumb a,
-.breadcrumb [aria-current="page"] {
-  display: inline-block;
-  max-width: 18rem; /* adjust to fit your layout */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  color: #0b66ff;
+.logo h2 {
+  color: #000;
+}
+
+.logo span {
+  color: gray;
+}
+
+nav {
+    margin-top: 20px;   
+}
+
+
+nav a {
   text-decoration: none;
-  padding: 0.2rem 0.25rem;
+  color: #333;
+  margin: 0 10px;
+  font-weight: 500;
+  padding: 15px;
+  transition: 0.3s ease;
 }
 
-.breadcrumb a:hover {
-  text-decoration: underline;
+nav a:hover{
+    opacity: 0.7;
 }
 
-/* separator between items */
-.breadcrumb li + li::before {
-  content: "›";
-  margin: 0 0.45rem;
-  color: #6b7280;
-  font-size: 0.95rem;
+nav a.active {
+  color: blue;
 }
 
-/* current page */
-.breadcrumb [aria-current="page"] {
-  color: #111827;
-  font-weight: 600;
-  pointer-events: none;
+.login {
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 8px 20px;
+  cursor: pointer;
+  width: 150px;
+  margin-top: 20px;
 }
 
-/* responsive tweaks */
-@media (max-width: 480px) {
-  .breadcrumb a,
-  .breadcrumb [aria-current="page"] {
-    max-width: 8rem;
-    font-size: 0.9rem;
-  }
-  .breadcrumb li + li::before {
-    content: "/"; /* simpler separator on very small screens */
-  }
+/* Main Layout */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 80px;
 }
 
+/* Left Side */
+.contact-info {
+  width: 50%;
+}
+
+.contact-info h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+  line-height: 1.4;
+}
+
+.bottom-text {
+  display: flex;
+  gap: 60px;
+  margin-top: 60px;
+}
+
+/* Right Side (Form) */
+.contact-form {
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  width: 35%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+}
+
+.name-fields,
+.phone-fields {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background-color: #f0f0f0;
+  outline: none;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+  margin-top: 10px;
+}
+
+.char-limit {
+  text-align: right;
+  font-size: 12px;
+  color: gray;
+}
+
+button[type="submit"] {
+  display: block;
+  background: blue;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 25px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.rights {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 13px;
+  color: gray;
+}
