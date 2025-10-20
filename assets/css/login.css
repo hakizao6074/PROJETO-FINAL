@@ -92,3 +92,27 @@ header{
 .link:hover {
   opacity: 1;
 }
+
+
+/* Media */
+@media (max-width: 600px) {
+    .caxa {
+        max-width: 90%; 
+        padding: 30px 20px; 
+    }
+
+    .logo {
+        width: 150px; 
+    }
+
+    .caxa h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        padding: 15px; 
+        font-size: 18px;
+    }
+}
