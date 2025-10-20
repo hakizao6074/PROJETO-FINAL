@@ -58,6 +58,14 @@ header {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.button-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
 /* ================= BACKGROUND ================= */
 .img-back {
     background-repeat: no-repeat;
@@ -285,7 +293,9 @@ footer {
         gap: 15px;
         font-size: 18px;
         padding: 10px;
+        flex-direction: column;
     }
+
 
     .img-1 {
         width: 250px;
@@ -388,8 +398,10 @@ footer {
     }
 }
 
+
 @media screen and (max-width: 400px) {
     .text-nav-1 {
+        display: flex;
         flex-direction: column;
         gap: 10px;
         font-size: 16px;
@@ -437,5 +449,9 @@ footer {
 
     header {
         font-size: 12px;
+
+        
     }
+
+
 }
